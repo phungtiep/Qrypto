@@ -1,0 +1,11 @@
+framework module jsonlogic {
+  umbrella header "jsonlogic-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module jsonlogic.Swift {
+  header "jsonlogic-Swift.h"
+  requires objc
+}

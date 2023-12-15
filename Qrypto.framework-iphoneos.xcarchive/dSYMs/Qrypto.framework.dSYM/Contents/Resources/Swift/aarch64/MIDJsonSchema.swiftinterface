@@ -1,0 +1,79 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MIDJsonSchema
+import CoreFoundation
+import Foundation
+@_exported import MIDJsonSchema
+import Swift
+import _Concurrency
+public enum Type : Swift.String {
+  case object
+  case array
+  case string
+  case integer
+  case number
+  case boolean
+  case null
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Schema {
+  public let title: Swift.String?
+  public let description: Swift.String?
+  public let type: [MIDJsonSchema.`Type`]?
+  public init(_ schema: [Swift.String : Any])
+  public func validate(_ data: Any) throws -> MIDJsonSchema.ValidationResult
+  public func validate(_ data: Any) throws -> Swift.AnySequence<MIDJsonSchema.ValidationError>
+}
+public func validate(_ value: Any, schema: [Swift.String : Any]) throws -> MIDJsonSchema.ValidationResult
+public func validate(_ value: Any, schema: Swift.Bool) throws -> MIDJsonSchema.ValidationResult
+@_hasMissingDesignatedInitializers public class ValidationError : Swift.Encodable {
+  final public let description: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  final public let instanceLocation: MIDJsonSchema.JSONPointer
+  final public let keywordLocation: MIDJsonSchema.JSONPointer
+  @objc deinit
+}
+public enum ValidationResult : Swift.Encodable {
+  case valid
+  case invalid([MIDJsonSchema.ValidationError])
+  public func encode(to encoder: Swift.Encoder) throws
+  public var valid: Swift.Bool {
+    get
+  }
+  public var errors: [MIDJsonSchema.ValidationError]? {
+    get
+  }
+}
+public class Draft202012Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
+  @objc deinit
+}
+public typealias Draft6Validator = MIDJsonSchema.Draft7Validator
+public class Draft4Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
+  @objc deinit
+}
+public class Draft7Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
+  @objc deinit
+}
+public struct JSONPointer {
+  public var path: Swift.String {
+    get
+  }
+}
+public class Draft201909Validator {
+  required public init(schema: Swift.Bool)
+  required public init(schema: [Swift.String : Any])
+  @objc deinit
+}
+extension MIDJsonSchema.`Type` : Swift.Equatable {}
+extension MIDJsonSchema.`Type` : Swift.Hashable {}
+extension MIDJsonSchema.`Type` : Swift.RawRepresentable {}

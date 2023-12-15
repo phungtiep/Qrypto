@@ -1,0 +1,11 @@
+framework module JSON {
+  umbrella header "json-enum-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module JSON.Swift {
+  header "JSON-Swift.h"
+  requires objc
+}

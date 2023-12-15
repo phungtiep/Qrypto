@@ -1,0 +1,1781 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "jsonlogic",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "JSON",
+        "printedName": "JSON",
+        "declKind": "Import",
+        "moduleName": "jsonlogic"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JSONLogicError",
+        "printedName": "JSONLogicError",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSONLogicError",
+                "printedName": "jsonlogic.JSONLogicError",
+                "usr": "s:9jsonlogic14JSONLogicErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSONLogicError",
+                "printedName": "jsonlogic.JSONLogicError",
+                "usr": "s:9jsonlogic14JSONLogicErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9jsonlogic14JSONLogicErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9jsonlogic14JSONLogicErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "jsonlogic",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "canNotParseJSONData",
+            "printedName": "canNotParseJSONData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(jsonlogic.JSONLogicError.Type) -> (Swift.String) -> jsonlogic.JSONLogicError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> jsonlogic.JSONLogicError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSONLogicError",
+                        "printedName": "jsonlogic.JSONLogicError",
+                        "usr": "s:9jsonlogic14JSONLogicErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "jsonlogic.JSONLogicError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSONLogicError",
+                        "printedName": "jsonlogic.JSONLogicError",
+                        "usr": "s:9jsonlogic14JSONLogicErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9jsonlogic14JSONLogicErrorO19canNotParseJSONDatayACSScACmF",
+            "mangledName": "$s9jsonlogic14JSONLogicErrorO19canNotParseJSONDatayACSScACmF",
+            "moduleName": "jsonlogic",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "canNotParseJSONRule",
+            "printedName": "canNotParseJSONRule",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(jsonlogic.JSONLogicError.Type) -> (Swift.String) -> jsonlogic.JSONLogicError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> jsonlogic.JSONLogicError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSONLogicError",
+                        "printedName": "jsonlogic.JSONLogicError",
+                        "usr": "s:9jsonlogic14JSONLogicErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "jsonlogic.JSONLogicError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSONLogicError",
+                        "printedName": "jsonlogic.JSONLogicError",
+                        "usr": "s:9jsonlogic14JSONLogicErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9jsonlogic14JSONLogicErrorO19canNotParseJSONRuleyACSScACmF",
+            "mangledName": "$s9jsonlogic14JSONLogicErrorO19canNotParseJSONRuleyACSScACmF",
+            "moduleName": "jsonlogic",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "canNotConvertResultToType",
+            "printedName": "canNotConvertResultToType",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(jsonlogic.JSONLogicError.Type) -> (Any.Type) -> jsonlogic.JSONLogicError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Any.Type) -> jsonlogic.JSONLogicError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSONLogicError",
+                        "printedName": "jsonlogic.JSONLogicError",
+                        "usr": "s:9jsonlogic14JSONLogicErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExistentialMetatype",
+                        "printedName": "Any.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "jsonlogic.JSONLogicError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSONLogicError",
+                        "printedName": "jsonlogic.JSONLogicError",
+                        "usr": "s:9jsonlogic14JSONLogicErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9jsonlogic14JSONLogicErrorO25canNotConvertResultToTypeyACypXpcACmF",
+            "mangledName": "$s9jsonlogic14JSONLogicErrorO25canNotConvertResultToTypeyACypXpcACmF",
+            "moduleName": "jsonlogic",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9jsonlogic14JSONLogicErrorO",
+        "mangledName": "$s9jsonlogic14JSONLogicErrorO",
+        "moduleName": "jsonlogic",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "applyRule",
+        "printedName": "applyRule(_:to:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "hasDefaultArg": true,
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:9jsonlogic9applyRule_2toxSS_SSSgtKlF",
+        "mangledName": "$s9jsonlogic9applyRule_2toxSS_SSSgtKlF",
+        "moduleName": "jsonlogic",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<T>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "throwing": true,
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JsonLogic",
+        "printedName": "JsonLogic",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JsonLogic",
+                "printedName": "jsonlogic.JsonLogic",
+                "usr": "s:9jsonlogic9JsonLogicC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9jsonlogic9JsonLogicCyACSSKcfc",
+            "mangledName": "$s9jsonlogic9JsonLogicCyACSSKcfc",
+            "moduleName": "jsonlogic",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:customOperators:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JsonLogic",
+                "printedName": "jsonlogic.JsonLogic",
+                "usr": "s:9jsonlogic9JsonLogicC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : (JSON.JSON?) -> JSON.JSON]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : (JSON.JSON?) -> JSON.JSON]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(JSON.JSON?) -> JSON.JSON",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "JSON",
+                            "printedName": "JSON.JSON",
+                            "usr": "s:4JSONAAO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "JSON.JSON?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "JSON",
+                                "printedName": "JSON.JSON",
+                                "usr": "s:4JSONAAO"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9jsonlogic9JsonLogicC_15customOperatorsACSS_SDySS4JSONAEOAFSgcGSgtKcfc",
+            "mangledName": "$s9jsonlogic9JsonLogicC_15customOperatorsACSS_SDySS4JSONAEOAFSgcGSgtKcfc",
+            "moduleName": "jsonlogic",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "applyRule",
+            "printedName": "applyRule(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9jsonlogic9JsonLogicC9applyRule2toxSSSg_tKlF",
+            "mangledName": "$s9jsonlogic9JsonLogicC9applyRule2toxSSSg_tKlF",
+            "moduleName": "jsonlogic",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9jsonlogic9JsonLogicC",
+        "mangledName": "$s9jsonlogic9JsonLogicC",
+        "moduleName": "jsonlogic",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "jsonlogic",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "JSON",
+        "printedName": "JSON",
+        "declKind": "Import",
+        "moduleName": "jsonlogic"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ParseError",
+        "printedName": "ParseError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "UnimplementedExpressionFor",
+            "printedName": "UnimplementedExpressionFor",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(jsonlogic.ParseError.Type) -> (Swift.String) -> jsonlogic.ParseError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> jsonlogic.ParseError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ParseError",
+                        "printedName": "jsonlogic.ParseError",
+                        "usr": "s:9jsonlogic10ParseErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "jsonlogic.ParseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ParseError",
+                        "printedName": "jsonlogic.ParseError",
+                        "usr": "s:9jsonlogic10ParseErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9jsonlogic10ParseErrorO26UnimplementedExpressionForyACSScACmF",
+            "mangledName": "$s9jsonlogic10ParseErrorO26UnimplementedExpressionForyACSScACmF",
+            "moduleName": "jsonlogic"
+          },
+          {
+            "kind": "Var",
+            "name": "GenericError",
+            "printedName": "GenericError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(jsonlogic.ParseError.Type) -> (Swift.String) -> jsonlogic.ParseError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> jsonlogic.ParseError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ParseError",
+                        "printedName": "jsonlogic.ParseError",
+                        "usr": "s:9jsonlogic10ParseErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "jsonlogic.ParseError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ParseError",
+                        "printedName": "jsonlogic.ParseError",
+                        "usr": "s:9jsonlogic10ParseErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9jsonlogic10ParseErrorO07GenericC0yACSScACmF",
+            "mangledName": "$s9jsonlogic10ParseErrorO07GenericC0yACSScACmF",
+            "moduleName": "jsonlogic"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ParseError",
+                "printedName": "jsonlogic.ParseError",
+                "usr": "s:9jsonlogic10ParseErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ParseError",
+                "printedName": "jsonlogic.ParseError",
+                "usr": "s:9jsonlogic10ParseErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9jsonlogic10ParseErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9jsonlogic10ParseErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "jsonlogic",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9jsonlogic10ParseErrorO",
+        "mangledName": "$s9jsonlogic10ParseErrorO",
+        "moduleName": "jsonlogic",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/JsonLogic.swift",
+      "kind": "BooleanLiteral",
+      "offset": 521,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/JsonLogic.swift",
+      "kind": "BooleanLiteral",
+      "offset": 714,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/JsonLogic.swift",
+      "kind": "BooleanLiteral",
+      "offset": 896,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/JsonLogic.swift",
+      "kind": "StringLiteral",
+      "offset": 3427,
+      "length": 23,
+      "value": "\"Not valid JSON object\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/JsonLogic.swift",
+      "kind": "StringLiteral",
+      "offset": 4636,
+      "length": 62,
+      "value": "\" canNotConvertResultToType \""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/JsonLogic.swift",
+      "kind": "StringLiteral",
+      "offset": 4673,
+      "length": 4,
+      "value": "\" from \""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/JsonLogic.swift",
+      "kind": "StringLiteral",
+      "offset": 4697,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/JsonLogic.swift",
+      "kind": "StringLiteral",
+      "offset": 5867,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/JsonLogic.swift",
+      "kind": "StringLiteral",
+      "offset": 5875,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1567,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2042,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2070,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2092,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2158,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2187,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2409,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2884,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2912,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2934,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3244,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3272,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3283,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3626,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3672,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3720,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3785,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3795,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3853,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3863,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3982,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4030,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4040,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4100,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4110,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4156,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4599,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4638,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4694,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4762,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4827,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4866,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4974,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5826,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6239,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7242,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7507,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8896,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 9091,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 9099,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 9154,
+      "length": 11,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 9164,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 9216,
+      "length": 11,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 9226,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 9389,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 9439,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 9478,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 9569,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 9729,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 10455,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10729,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 12071,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "Array",
+      "offset": 12788,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13059,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13111,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13163,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "Array",
+      "offset": 13446,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 13628,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14212,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14278,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 14359,
+      "length": 4,
+      "value": "\"[]\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14422,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14790,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14852,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15005,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15122,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 15256,
+      "length": 13,
+      "value": "\"accumulator\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 15279,
+      "length": 9,
+      "value": "\"current\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15610,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15680,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "Array",
+      "offset": 15755,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15818,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16152,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16222,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16348,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16404,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16719,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16791,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16918,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17303,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17375,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17502,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17558,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 18311,
+      "length": 57,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 18367,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "Dictionary",
+      "offset": 18646,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 18886,
+      "length": 30,
+      "value": "\"Error parsing json '\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 18914,
+      "length": 3,
+      "value": "\"'\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "Array",
+      "offset": 19369,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "Array",
+      "offset": 19649,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 20151,
+      "length": 5,
+      "value": "\"var\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20285,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20346,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20529,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 20602,
+      "length": 5,
+      "value": "\"===\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20673,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20742,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 20760,
+      "length": 5,
+      "value": "\"!==\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20835,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20908,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 20927,
+      "length": 4,
+      "value": "\"==\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20991,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 21054,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 21072,
+      "length": 4,
+      "value": "\"!=\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 21145,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 21217,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 21236,
+      "length": 3,
+      "value": "\"!\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 21311,
+      "length": 3,
+      "value": "\"+\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 21386,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 21466,
+      "length": 3,
+      "value": "\"*\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 21546,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 21624,
+      "length": 3,
+      "value": "\"%\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 21702,
+      "length": 3,
+      "value": "\">\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 21798,
+      "length": 3,
+      "value": "\"<\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 21894,
+      "length": 4,
+      "value": "\">=\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 21992,
+      "length": 4,
+      "value": "\"<=\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 22090,
+      "length": 4,
+      "value": "\"if\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 22096,
+      "length": 4,
+      "value": "\"?:\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 22236,
+      "length": 42,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 22243,
+      "length": 9,
+      "value": "\" statement be followed by an array\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 22341,
+      "length": 5,
+      "value": "\"and\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 22348,
+      "length": 4,
+      "value": "\"or\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 22488,
+      "length": 42,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 22495,
+      "length": 9,
+      "value": "\" statement be followed by an array\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 22592,
+      "length": 5,
+      "value": "\"and\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 22624,
+      "length": 4,
+      "value": "\"!!\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 22711,
+      "length": 5,
+      "value": "\"max\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 22789,
+      "length": 5,
+      "value": "\"min\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 22866,
+      "length": 8,
+      "value": "\"substr\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 23010,
+      "length": 42,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 23017,
+      "length": 9,
+      "value": "\" statement be followed by an array\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23110,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23180,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23250,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23320,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23400,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23466,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 23532,
+      "length": 4,
+      "value": "\"in\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23605,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23677,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 23695,
+      "length": 5,
+      "value": "\"cat\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 23772,
+      "length": 9,
+      "value": "\"missing\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 23864,
+      "length": 14,
+      "value": "\"missing_some\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 23965,
+      "length": 5,
+      "value": "\"map\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 24054,
+      "length": 8,
+      "value": "\"reduce\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 24149,
+      "length": 8,
+      "value": "\"filter\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 24244,
+      "length": 6,
+      "value": "\"none\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 24335,
+      "length": 5,
+      "value": "\"all\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 24424,
+      "length": 6,
+      "value": "\"some\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 24515,
+      "length": 7,
+      "value": "\"merge\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/jsonlogic\/Sources\/jsonlogic\/Parser.swift",
+      "kind": "StringLiteral",
+      "offset": 24608,
+      "length": 5,
+      "value": "\"log\""
+    }
+  ]
+}

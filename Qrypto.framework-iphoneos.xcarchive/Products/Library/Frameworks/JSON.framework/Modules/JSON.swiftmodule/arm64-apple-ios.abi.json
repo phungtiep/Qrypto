@@ -1,0 +1,3436 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "JSON",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JSON",
+        "printedName": "JSON",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "Null",
+            "printedName": "Null",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JSON.JSON.Type) -> JSON.JSON",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSON",
+                    "printedName": "JSON.JSON",
+                    "usr": "s:4JSONAAO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JSON.JSON.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4JSONAAO4NullyA2BmF",
+            "mangledName": "$s4JSONAAO4NullyA2BmF",
+            "moduleName": "JSON"
+          },
+          {
+            "kind": "Var",
+            "name": "Array",
+            "printedName": "Array",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JSON.JSON.Type) -> ([JSON.JSON]) -> JSON.JSON",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([JSON.JSON]) -> JSON.JSON",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[JSON.JSON]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "JSON",
+                            "printedName": "JSON.JSON",
+                            "usr": "s:4JSONAAO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JSON.JSON.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4JSONAAO5ArrayyABSayABGcABmF",
+            "mangledName": "$s4JSONAAO5ArrayyABSayABGcABmF",
+            "moduleName": "JSON"
+          },
+          {
+            "kind": "Var",
+            "name": "Dictionary",
+            "printedName": "Dictionary",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JSON.JSON.Type) -> ([Swift.String : JSON.JSON]) -> JSON.JSON",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : JSON.JSON]) -> JSON.JSON",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : JSON.JSON]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "JSON",
+                            "printedName": "JSON.JSON",
+                            "usr": "s:4JSONAAO"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JSON.JSON.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4JSONAAO10DictionaryyABSDySSABGcABmF",
+            "mangledName": "$s4JSONAAO10DictionaryyABSDySSABGcABmF",
+            "moduleName": "JSON"
+          },
+          {
+            "kind": "Var",
+            "name": "Int",
+            "printedName": "Int",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JSON.JSON.Type) -> (Swift.Int64) -> JSON.JSON",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int64) -> JSON.JSON",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JSON.JSON.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4JSONAAO3IntyABs5Int64VcABmF",
+            "mangledName": "$s4JSONAAO3IntyABs5Int64VcABmF",
+            "moduleName": "JSON"
+          },
+          {
+            "kind": "Var",
+            "name": "Double",
+            "printedName": "Double",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JSON.JSON.Type) -> (Swift.Double) -> JSON.JSON",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Double) -> JSON.JSON",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JSON.JSON.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4JSONAAO6DoubleyABSdcABmF",
+            "mangledName": "$s4JSONAAO6DoubleyABSdcABmF",
+            "moduleName": "JSON"
+          },
+          {
+            "kind": "Var",
+            "name": "String",
+            "printedName": "String",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JSON.JSON.Type) -> (Swift.String) -> JSON.JSON",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> JSON.JSON",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JSON.JSON.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4JSONAAO6StringyABSScABmF",
+            "mangledName": "$s4JSONAAO6StringyABSScABmF",
+            "moduleName": "JSON"
+          },
+          {
+            "kind": "Var",
+            "name": "Bool",
+            "printedName": "Bool",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JSON.JSON.Type) -> (Swift.Bool) -> JSON.JSON",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> JSON.JSON",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JSON.JSON.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4JSONAAO4BoolyABSbcABmF",
+            "mangledName": "$s4JSONAAO4BoolyABSbcABmF",
+            "moduleName": "JSON"
+          },
+          {
+            "kind": "Var",
+            "name": "Error",
+            "printedName": "Error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(JSON.JSON.Type) -> (JSON.JSON.JSON2Error) -> JSON.JSON",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(JSON.JSON.JSON2Error) -> JSON.JSON",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON2Error",
+                        "printedName": "JSON.JSON.JSON2Error",
+                        "usr": "s:4JSONAAO10JSON2ErrorO"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "JSON.JSON.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4JSONAAO5ErroryA2B05JSON2B0OcABmF",
+            "mangledName": "$s4JSONAAO5ErroryA2B05JSON2B0OcABmF",
+            "moduleName": "JSON"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ContentType",
+            "printedName": "ContentType",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "error",
+                "printedName": "error",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(JSON.JSON.ContentType.Type) -> JSON.JSON.ContentType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContentType",
+                        "printedName": "JSON.JSON.ContentType",
+                        "usr": "s:4JSONAAO11ContentTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "JSON.JSON.ContentType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ContentType",
+                            "printedName": "JSON.JSON.ContentType",
+                            "usr": "s:4JSONAAO11ContentTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4JSONAAO11ContentTypeO5erroryA2DmF",
+                "mangledName": "$s4JSONAAO11ContentTypeO5erroryA2DmF",
+                "moduleName": "JSON"
+              },
+              {
+                "kind": "Var",
+                "name": "null",
+                "printedName": "null",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(JSON.JSON.ContentType.Type) -> JSON.JSON.ContentType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContentType",
+                        "printedName": "JSON.JSON.ContentType",
+                        "usr": "s:4JSONAAO11ContentTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "JSON.JSON.ContentType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ContentType",
+                            "printedName": "JSON.JSON.ContentType",
+                            "usr": "s:4JSONAAO11ContentTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4JSONAAO11ContentTypeO4nullyA2DmF",
+                "mangledName": "$s4JSONAAO11ContentTypeO4nullyA2DmF",
+                "moduleName": "JSON"
+              },
+              {
+                "kind": "Var",
+                "name": "bool",
+                "printedName": "bool",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(JSON.JSON.ContentType.Type) -> JSON.JSON.ContentType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContentType",
+                        "printedName": "JSON.JSON.ContentType",
+                        "usr": "s:4JSONAAO11ContentTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "JSON.JSON.ContentType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ContentType",
+                            "printedName": "JSON.JSON.ContentType",
+                            "usr": "s:4JSONAAO11ContentTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4JSONAAO11ContentTypeO4boolyA2DmF",
+                "mangledName": "$s4JSONAAO11ContentTypeO4boolyA2DmF",
+                "moduleName": "JSON"
+              },
+              {
+                "kind": "Var",
+                "name": "number",
+                "printedName": "number",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(JSON.JSON.ContentType.Type) -> JSON.JSON.ContentType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContentType",
+                        "printedName": "JSON.JSON.ContentType",
+                        "usr": "s:4JSONAAO11ContentTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "JSON.JSON.ContentType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ContentType",
+                            "printedName": "JSON.JSON.ContentType",
+                            "usr": "s:4JSONAAO11ContentTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4JSONAAO11ContentTypeO6numberyA2DmF",
+                "mangledName": "$s4JSONAAO11ContentTypeO6numberyA2DmF",
+                "moduleName": "JSON"
+              },
+              {
+                "kind": "Var",
+                "name": "string",
+                "printedName": "string",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(JSON.JSON.ContentType.Type) -> JSON.JSON.ContentType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContentType",
+                        "printedName": "JSON.JSON.ContentType",
+                        "usr": "s:4JSONAAO11ContentTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "JSON.JSON.ContentType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ContentType",
+                            "printedName": "JSON.JSON.ContentType",
+                            "usr": "s:4JSONAAO11ContentTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4JSONAAO11ContentTypeO6stringyA2DmF",
+                "mangledName": "$s4JSONAAO11ContentTypeO6stringyA2DmF",
+                "moduleName": "JSON"
+              },
+              {
+                "kind": "Var",
+                "name": "array",
+                "printedName": "array",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(JSON.JSON.ContentType.Type) -> JSON.JSON.ContentType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContentType",
+                        "printedName": "JSON.JSON.ContentType",
+                        "usr": "s:4JSONAAO11ContentTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "JSON.JSON.ContentType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ContentType",
+                            "printedName": "JSON.JSON.ContentType",
+                            "usr": "s:4JSONAAO11ContentTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4JSONAAO11ContentTypeO5arrayyA2DmF",
+                "mangledName": "$s4JSONAAO11ContentTypeO5arrayyA2DmF",
+                "moduleName": "JSON"
+              },
+              {
+                "kind": "Var",
+                "name": "object",
+                "printedName": "object",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(JSON.JSON.ContentType.Type) -> JSON.JSON.ContentType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContentType",
+                        "printedName": "JSON.JSON.ContentType",
+                        "usr": "s:4JSONAAO11ContentTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "JSON.JSON.ContentType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ContentType",
+                            "printedName": "JSON.JSON.ContentType",
+                            "usr": "s:4JSONAAO11ContentTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4JSONAAO11ContentTypeO6objectyA2DmF",
+                "mangledName": "$s4JSONAAO11ContentTypeO6objectyA2DmF",
+                "moduleName": "JSON"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContentType",
+                    "printedName": "JSON.JSON.ContentType",
+                    "usr": "s:4JSONAAO11ContentTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContentType",
+                    "printedName": "JSON.JSON.ContentType",
+                    "usr": "s:4JSONAAO11ContentTypeO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:4JSONAAO11ContentTypeO2eeoiySbAD_ADtFZ",
+                "mangledName": "$s4JSONAAO11ContentTypeO2eeoiySbAD_ADtFZ",
+                "moduleName": "JSON",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4JSONAAO11ContentTypeO9hashValueSivp",
+                "mangledName": "$s4JSONAAO11ContentTypeO9hashValueSivp",
+                "moduleName": "JSON",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4JSONAAO11ContentTypeO9hashValueSivg",
+                    "mangledName": "$s4JSONAAO11ContentTypeO9hashValueSivg",
+                    "moduleName": "JSON",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:4JSONAAO11ContentTypeO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s4JSONAAO11ContentTypeO4hash4intoys6HasherVz_tF",
+                "moduleName": "JSON",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:4JSONAAO11ContentTypeO",
+            "mangledName": "$s4JSONAAO11ContentTypeO",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ContentType",
+                "printedName": "JSON.JSON.ContentType",
+                "usr": "s:4JSONAAO11ContentTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4JSONAAO4typeAB11ContentTypeOvp",
+            "mangledName": "$s4JSONAAO4typeAB11ContentTypeOvp",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContentType",
+                    "printedName": "JSON.JSON.ContentType",
+                    "usr": "s:4JSONAAO11ContentTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4JSONAAO4typeAB11ContentTypeOvg",
+                "mangledName": "$s4JSONAAO4typeAB11ContentTypeOvg",
+                "moduleName": "JSON",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "JSON2Error",
+            "printedName": "JSON2Error",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "failedToParse",
+                "printedName": "failedToParse",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(JSON.JSON.JSON2Error.Type) -> JSON.JSON.JSON2Error",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON2Error",
+                        "printedName": "JSON.JSON.JSON2Error",
+                        "usr": "s:4JSONAAO10JSON2ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "JSON.JSON.JSON2Error.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "JSON2Error",
+                            "printedName": "JSON.JSON.JSON2Error",
+                            "usr": "s:4JSONAAO10JSON2ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4JSONAAO10JSON2ErrorO13failedToParseyA2DmF",
+                "mangledName": "$s4JSONAAO10JSON2ErrorO13failedToParseyA2DmF",
+                "moduleName": "JSON"
+              },
+              {
+                "kind": "Var",
+                "name": "notJSONValue",
+                "printedName": "notJSONValue",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(JSON.JSON.JSON2Error.Type) -> JSON.JSON.JSON2Error",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON2Error",
+                        "printedName": "JSON.JSON.JSON2Error",
+                        "usr": "s:4JSONAAO10JSON2ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "JSON.JSON.JSON2Error.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "JSON2Error",
+                            "printedName": "JSON.JSON.JSON2Error",
+                            "usr": "s:4JSONAAO10JSON2ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4JSONAAO10JSON2ErrorO12notJSONValueyA2DmF",
+                "mangledName": "$s4JSONAAO10JSON2ErrorO12notJSONValueyA2DmF",
+                "moduleName": "JSON"
+              },
+              {
+                "kind": "Var",
+                "name": "indexOutOfRange",
+                "printedName": "indexOutOfRange",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(JSON.JSON.JSON2Error.Type) -> (Swift.Int) -> JSON.JSON.JSON2Error",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int) -> JSON.JSON.JSON2Error",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "JSON2Error",
+                            "printedName": "JSON.JSON.JSON2Error",
+                            "usr": "s:4JSONAAO10JSON2ErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "JSON.JSON.JSON2Error.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "JSON2Error",
+                            "printedName": "JSON.JSON.JSON2Error",
+                            "usr": "s:4JSONAAO10JSON2ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4JSONAAO10JSON2ErrorO15indexOutOfRangeyADSicADmF",
+                "mangledName": "$s4JSONAAO10JSON2ErrorO15indexOutOfRangeyADSicADmF",
+                "moduleName": "JSON"
+              },
+              {
+                "kind": "Var",
+                "name": "keyNotFound",
+                "printedName": "keyNotFound",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(JSON.JSON.JSON2Error.Type) -> (Swift.String) -> JSON.JSON.JSON2Error",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> JSON.JSON.JSON2Error",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "JSON2Error",
+                            "printedName": "JSON.JSON.JSON2Error",
+                            "usr": "s:4JSONAAO10JSON2ErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "JSON.JSON.JSON2Error.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "JSON2Error",
+                            "printedName": "JSON.JSON.JSON2Error",
+                            "usr": "s:4JSONAAO10JSON2ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4JSONAAO10JSON2ErrorO11keyNotFoundyADSScADmF",
+                "mangledName": "$s4JSONAAO10JSON2ErrorO11keyNotFoundyADSScADmF",
+                "moduleName": "JSON"
+              },
+              {
+                "kind": "Var",
+                "name": "notSubscriptableType",
+                "printedName": "notSubscriptableType",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(JSON.JSON.JSON2Error.Type) -> (JSON.JSON.ContentType) -> JSON.JSON.JSON2Error",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(JSON.JSON.ContentType) -> JSON.JSON.JSON2Error",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "JSON2Error",
+                            "printedName": "JSON.JSON.JSON2Error",
+                            "usr": "s:4JSONAAO10JSON2ErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ContentType",
+                            "printedName": "JSON.JSON.ContentType",
+                            "usr": "s:4JSONAAO11ContentTypeO"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "JSON.JSON.JSON2Error.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "JSON2Error",
+                            "printedName": "JSON.JSON.JSON2Error",
+                            "usr": "s:4JSONAAO10JSON2ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4JSONAAO10JSON2ErrorO20notSubscriptableTypeyAdB07ContentF0OcADmF",
+                "mangledName": "$s4JSONAAO10JSON2ErrorO20notSubscriptableTypeyAdB07ContentF0OcADmF",
+                "moduleName": "JSON"
+              },
+              {
+                "kind": "Var",
+                "name": "NSError",
+                "printedName": "NSError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(JSON.JSON.JSON2Error.Type) -> (Foundation.NSError) -> JSON.JSON.JSON2Error",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Foundation.NSError) -> JSON.JSON.JSON2Error",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "JSON2Error",
+                            "printedName": "JSON.JSON.JSON2Error",
+                            "usr": "s:4JSONAAO10JSON2ErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "JSON.JSON.JSON2Error.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "JSON2Error",
+                            "printedName": "JSON.JSON.JSON2Error",
+                            "usr": "s:4JSONAAO10JSON2ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:4JSONAAO10JSON2ErrorO7NSErroryADSoAECcADmF",
+                "mangledName": "$s4JSONAAO10JSON2ErrorO7NSErroryADSoAECcADmF",
+                "moduleName": "JSON"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSON2Error",
+                    "printedName": "JSON.JSON.JSON2Error",
+                    "usr": "s:4JSONAAO10JSON2ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSON2Error",
+                    "printedName": "JSON.JSON.JSON2Error",
+                    "usr": "s:4JSONAAO10JSON2ErrorO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:4JSONAAO10JSON2ErrorO2eeoiySbAD_ADtFZ",
+                "mangledName": "$s4JSONAAO10JSON2ErrorO2eeoiySbAD_ADtFZ",
+                "moduleName": "JSON",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:4JSONAAO10JSON2ErrorO9hashValueSivp",
+                "mangledName": "$s4JSONAAO10JSON2ErrorO9hashValueSivp",
+                "moduleName": "JSON",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:4JSONAAO10JSON2ErrorO9hashValueSivg",
+                    "mangledName": "$s4JSONAAO10JSON2ErrorO9hashValueSivg",
+                    "moduleName": "JSON",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:4JSONAAO10JSON2ErrorO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s4JSONAAO10JSON2ErrorO4hash4intoys6HasherVz_tF",
+                "moduleName": "JSON",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:4JSONAAO10JSON2ErrorO",
+            "mangledName": "$s4JSONAAO10JSON2ErrorO",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4JSONAAOABycfc",
+            "mangledName": "$s4JSONAAOABycfc",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[JSON.JSON]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSON",
+                    "printedName": "JSON.JSON",
+                    "usr": "s:4JSONAAO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4JSONAAOyABSayABGcfc",
+            "mangledName": "$s4JSONAAOyABSayABGcfc",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : JSON.JSON]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSON",
+                    "printedName": "JSON.JSON",
+                    "usr": "s:4JSONAAO"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4JSONAAOyABSDySSABGcfc",
+            "mangledName": "$s4JSONAAOyABSDySSABGcfc",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4JSONAAOyABypcfc",
+            "mangledName": "$s4JSONAAOyABypcfc",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4JSONAAOyAB10Foundation4DataVcfc",
+            "mangledName": "$s4JSONAAOyAB10Foundation4DataVcfc",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(string:encoding:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "JSON.JSON?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSON",
+                    "printedName": "JSON.JSON",
+                    "usr": "s:4JSONAAO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoding",
+                "printedName": "Swift.String.Encoding",
+                "hasDefaultArg": true,
+                "usr": "s:SS10FoundationE8EncodingV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4JSONAAO6string8encodingABSgSS_SS10FoundationE8EncodingVtcfc",
+            "mangledName": "$s4JSONAAO6string8encodingABSgSS_SS10FoundationE8EncodingVtcfc",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "===",
+            "printedName": "===(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO3eeeoiySbAB_ABtFZ",
+            "mangledName": "$s4JSONAAO3eeeoiySbAB_ABtFZ",
+            "moduleName": "JSON",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "!==",
+            "printedName": "!==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO3neeoiySbAB_ABtFZ",
+            "mangledName": "$s4JSONAAO3neeoiySbAB_ABtFZ",
+            "moduleName": "JSON",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO2eeoiySbAB_ABtFZ",
+            "mangledName": "$s4JSONAAO2eeoiySbAB_ABtFZ",
+            "moduleName": "JSON",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "+",
+            "printedName": "+(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO1poiyA2B_ABtFZ",
+            "mangledName": "$s4JSONAAO1poiyA2B_ABtFZ",
+            "moduleName": "JSON",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "-",
+            "printedName": "-(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO1sopyA2BFZ",
+            "mangledName": "$s4JSONAAO1sopyA2BFZ",
+            "moduleName": "JSON",
+            "static": true,
+            "declAttributes": [
+              "Prefix",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "-",
+            "printedName": "-(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO1soiyA2B_ABtFZ",
+            "mangledName": "$s4JSONAAO1soiyA2B_ABtFZ",
+            "moduleName": "JSON",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "*",
+            "printedName": "*(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO1moiyA2B_ABtFZ",
+            "mangledName": "$s4JSONAAO1moiyA2B_ABtFZ",
+            "moduleName": "JSON",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "\/",
+            "printedName": "\/(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO1doiyA2B_ABtFZ",
+            "mangledName": "$s4JSONAAO1doiyA2B_ABtFZ",
+            "moduleName": "JSON",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "%",
+            "printedName": "%(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO1roiyA2B_ABtFZ",
+            "mangledName": "$s4JSONAAO1roiyA2B_ABtFZ",
+            "moduleName": "JSON",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "bool",
+            "printedName": "bool",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4JSONAAO4boolSbSgvp",
+            "mangledName": "$s4JSONAAO4boolSbSgvp",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4JSONAAO4boolSbSgvg",
+                "mangledName": "$s4JSONAAO4boolSbSgvg",
+                "moduleName": "JSON",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "int",
+            "printedName": "int",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4JSONAAO3ints5Int64VSgvp",
+            "mangledName": "$s4JSONAAO3ints5Int64VSgvp",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4JSONAAO3ints5Int64VSgvg",
+                "mangledName": "$s4JSONAAO3ints5Int64VSgvg",
+                "moduleName": "JSON",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "double",
+            "printedName": "double",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4JSONAAO6doubleSdSgvp",
+            "mangledName": "$s4JSONAAO6doubleSdSgvp",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4JSONAAO6doubleSdSgvg",
+                "mangledName": "$s4JSONAAO6doubleSdSgvg",
+                "moduleName": "JSON",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "string",
+            "printedName": "string",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4JSONAAO6stringSSSgvp",
+            "mangledName": "$s4JSONAAO6stringSSSgvp",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4JSONAAO6stringSSSgvg",
+                "mangledName": "$s4JSONAAO6stringSSSgvg",
+                "moduleName": "JSON",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "array",
+            "printedName": "array",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[JSON.JSON]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[JSON.JSON]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4JSONAAO5arraySayABGSgvp",
+            "mangledName": "$s4JSONAAO5arraySayABGSgvp",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[JSON.JSON]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[JSON.JSON]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "JSON",
+                            "printedName": "JSON.JSON",
+                            "usr": "s:4JSONAAO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4JSONAAO5arraySayABGSgvg",
+                "mangledName": "$s4JSONAAO5arraySayABGSgvg",
+                "moduleName": "JSON",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dictionary",
+            "printedName": "dictionary",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : JSON.JSON]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : JSON.JSON]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4JSONAAO10dictionarySDySSABGSgvp",
+            "mangledName": "$s4JSONAAO10dictionarySDySSABGSgvp",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : JSON.JSON]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : JSON.JSON]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "JSON",
+                            "printedName": "JSON.JSON",
+                            "usr": "s:4JSONAAO"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4JSONAAO10dictionarySDySSABGSgvg",
+                "mangledName": "$s4JSONAAO10dictionarySDySSABGSgvg",
+                "moduleName": "JSON",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "<",
+            "printedName": "<(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO1loiySbAB_ABtFZ",
+            "mangledName": "$s4JSONAAO1loiySbAB_ABtFZ",
+            "moduleName": "JSON",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": ">",
+            "printedName": ">(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO1goiySbAB_ABtFZ",
+            "mangledName": "$s4JSONAAO1goiySbAB_ABtFZ",
+            "moduleName": "JSON",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": ">=",
+            "printedName": ">=(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO2geoiySbAB_ABtFZ",
+            "mangledName": "$s4JSONAAO2geoiySbAB_ABtFZ",
+            "moduleName": "JSON",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "<=",
+            "printedName": "<=(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO2leoiySbAB_ABtFZ",
+            "mangledName": "$s4JSONAAO2leoiySbAB_ABtFZ",
+            "moduleName": "JSON",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4JSONAAO9hashValueSivp",
+            "mangledName": "$s4JSONAAO9hashValueSivp",
+            "moduleName": "JSON",
+            "implicit": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4JSONAAO9hashValueSivg",
+                "mangledName": "$s4JSONAAO9hashValueSivg",
+                "moduleName": "JSON",
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s4JSONAAO4hash4intoys6HasherVz_tF",
+            "moduleName": "JSON",
+            "implicit": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(stringLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4JSONAAO13stringLiteralABSS_tcfc",
+            "mangledName": "$s4JSONAAO13stringLiteralABSS_tcfc",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nilLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4JSONAAO10nilLiteralAByt_tcfc",
+            "mangledName": "$s4JSONAAO10nilLiteralAByt_tcfc",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(arrayLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4JSONAAO12arrayLiteralABSid_tcfc",
+            "mangledName": "$s4JSONAAO12arrayLiteralABSid_tcfc",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(booleanLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4JSONAAO14booleanLiteralABSb_tcfc",
+            "mangledName": "$s4JSONAAO14booleanLiteralABSb_tcfc",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dictionaryLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[(Swift.String, JSON.JSON)]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, JSON.JSON)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "JSON.JSON",
+                        "usr": "s:4JSONAAO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4JSONAAO17dictionaryLiteralABSS_ABtd_tcfc",
+            "mangledName": "$s4JSONAAO17dictionaryLiteralABSS_ABtd_tcfc",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(integerLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4JSONAAO14integerLiteralABSi_tcfc",
+            "mangledName": "$s4JSONAAO14integerLiteralABSi_tcfc",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(floatLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4JSONAAO12floatLiteralABSd_tcfc",
+            "mangledName": "$s4JSONAAO12floatLiteralABSd_tcfc",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Subscript",
+            "name": "subscript",
+            "printedName": "subscript(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Subscript",
+            "usr": "s:4JSONAAOyABSicip",
+            "mangledName": "$s4JSONAAOyABSicip",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSON",
+                    "printedName": "JSON.JSON",
+                    "usr": "s:4JSONAAO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4JSONAAOyABSicig",
+                "mangledName": "$s4JSONAAOyABSicig",
+                "moduleName": "JSON",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSON",
+                    "printedName": "JSON.JSON",
+                    "usr": "s:4JSONAAO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4JSONAAOyABSicis",
+                "mangledName": "$s4JSONAAOyABSicis",
+                "moduleName": "JSON",
+                "isFromExtension": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4JSONAAOyABSiciM",
+                "mangledName": "$s4JSONAAOyABSiciM",
+                "moduleName": "JSON",
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Subscript",
+            "name": "subscript",
+            "printedName": "subscript(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Subscript",
+            "usr": "s:4JSONAAOyABSScip",
+            "mangledName": "$s4JSONAAOyABSScip",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSON",
+                    "printedName": "JSON.JSON",
+                    "usr": "s:4JSONAAO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4JSONAAOyABSScig",
+                "mangledName": "$s4JSONAAOyABSScig",
+                "moduleName": "JSON",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSON",
+                    "printedName": "JSON.JSON",
+                    "usr": "s:4JSONAAO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4JSONAAOyABSScis",
+                "mangledName": "$s4JSONAAOyABSScis",
+                "moduleName": "JSON",
+                "isFromExtension": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4JSONAAOyABSSciM",
+                "mangledName": "$s4JSONAAOyABSSciM",
+                "moduleName": "JSON",
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "truthy",
+            "printedName": "truthy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO6truthySbyF",
+            "mangledName": "$s4JSONAAO6truthySbyF",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toNumber",
+            "printedName": "toNumber()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSON",
+                "printedName": "JSON.JSON",
+                "usr": "s:4JSONAAO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4JSONAAO8toNumberAByF",
+            "mangledName": "$s4JSONAAO8toNumberAByF",
+            "moduleName": "JSON",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:4JSONAAO",
+        "mangledName": "$s4JSONAAO",
+        "moduleName": "JSON",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByIntegerLiteral",
+            "printedName": "ExpressibleByIntegerLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "IntegerLiteralType",
+                "printedName": "IntegerLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s27ExpressibleByIntegerLiteralP",
+            "mangledName": "$ss27ExpressibleByIntegerLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByArrayLiteral",
+            "printedName": "ExpressibleByArrayLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ArrayLiteralElement",
+                "printedName": "ArrayLiteralElement",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s25ExpressibleByArrayLiteralP",
+            "mangledName": "$ss25ExpressibleByArrayLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByBooleanLiteral",
+            "printedName": "ExpressibleByBooleanLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "BooleanLiteralType",
+                "printedName": "BooleanLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s27ExpressibleByBooleanLiteralP",
+            "mangledName": "$ss27ExpressibleByBooleanLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByNilLiteral",
+            "printedName": "ExpressibleByNilLiteral",
+            "usr": "s:s23ExpressibleByNilLiteralP",
+            "mangledName": "$ss23ExpressibleByNilLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringLiteral",
+            "printedName": "ExpressibleByStringLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringLiteralType",
+                "printedName": "StringLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s26ExpressibleByStringLiteralP",
+            "mangledName": "$ss26ExpressibleByStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByDictionaryLiteral",
+            "printedName": "ExpressibleByDictionaryLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Key",
+                "printedName": "Key",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Value",
+                "printedName": "Value",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSON",
+                    "printedName": "JSON.JSON",
+                    "usr": "s:4JSONAAO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s30ExpressibleByDictionaryLiteralP",
+            "mangledName": "$ss30ExpressibleByDictionaryLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByFloatLiteral",
+            "printedName": "ExpressibleByFloatLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "FloatLiteralType",
+                "printedName": "FloatLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s25ExpressibleByFloatLiteralP",
+            "mangledName": "$ss25ExpressibleByFloatLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "printedName": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ExtendedGraphemeClusterLiteralType",
+                "printedName": "ExtendedGraphemeClusterLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s43ExpressibleByExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss43ExpressibleByExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByUnicodeScalarLiteral",
+            "printedName": "ExpressibleByUnicodeScalarLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarLiteralType",
+                "printedName": "UnicodeScalarLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s33ExpressibleByUnicodeScalarLiteralP",
+            "mangledName": "$ss33ExpressibleByUnicodeScalarLiteralP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 1835,
+      "length": 3,
+      "value": "\"i\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 1840,
+      "length": 3,
+      "value": "\"s\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 1845,
+      "length": 3,
+      "value": "\"l\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 1850,
+      "length": 3,
+      "value": "\"q\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 1855,
+      "length": 3,
+      "value": "\"I\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 1860,
+      "length": 3,
+      "value": "\"S\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 1865,
+      "length": 3,
+      "value": "\"L\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 1870,
+      "length": 3,
+      "value": "\"Q\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 1939,
+      "length": 3,
+      "value": "\"f\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 1944,
+      "length": 3,
+      "value": "\"d\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 2017,
+      "length": 3,
+      "value": "\"B\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 2022,
+      "length": 3,
+      "value": "\"c\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 2027,
+      "length": 3,
+      "value": "\"C\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 2096,
+      "length": 3,
+      "value": "\"*\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 2595,
+      "length": 37,
+      "value": "\"Can't convert value \""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 2623,
+      "length": 2,
+      "value": "\" to JSON\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2640,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3894,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3984,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4023,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4236,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4276,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4329,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4370,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5320,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5486,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5652,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5815,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6144,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6253,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6361,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6413,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6459,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7972,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9674,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11610,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11692,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11937,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12227,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12473,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "Dictionary",
+      "offset": 13195,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 14610,
+      "length": 58,
+      "value": "\"attempted to subscript \"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 14643,
+      "length": 1,
+      "value": "\"\" which is not an array\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 15546,
+      "length": 30,
+      "value": "\"\"\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "StringLiteral",
+      "offset": 15556,
+      "length": 1,
+      "value": "\"\" is not an object\""
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15943,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "FloatLiteral",
+      "offset": 16008,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16261,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16576,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16580,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/phungtsm\/Library\/CloudStorage\/GoogleDrive-phungtsm@gmail.com\/Other computers\/My Mac mini\/QRYPTO_IOS\/Qrypto\/Pods\/json-enum\/Sources\/JSON\/JSON.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16621,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}

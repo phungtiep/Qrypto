@@ -1,0 +1,11 @@
+framework module Qrypto {
+  umbrella header "Qrypto.h"
+  export *
+
+  module * { export * }
+}
+
+module Qrypto.Swift {
+  header "Qrypto-Swift.h"
+  requires objc
+}
