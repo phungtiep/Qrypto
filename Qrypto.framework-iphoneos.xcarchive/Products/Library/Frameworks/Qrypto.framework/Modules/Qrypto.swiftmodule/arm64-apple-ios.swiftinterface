@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Qrypto
-// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import Accelerate
 import AudioToolbox
@@ -11,8 +10,8 @@ import CoreData
 import CoreNFC
 import CryptoKit
 import CryptoSwift
-import DeveloperToolsSupport
 import Foundation
+import JWTsSwift
 import MIDJsonSchema
 import Network
 import PDFKit
@@ -22,15 +21,12 @@ import SafariServices
 import Security
 import Swift
 import SwiftCBOR
-import SwiftUI
 import SwiftyJSON
 import SwiftyRSA
 import SystemConfiguration
 import UIKit
 import Vision
 import _Concurrency
-import _StringProcessing
-import _SwiftConcurrencyShims
 import jsonlogic
 public enum DataOperationError : Swift.Error {
   case noInputData
@@ -41,7 +37,7 @@ public enum DataOperationError : Swift.Error {
 }
 public enum DataOperationResult {
   case success(Swift.Bool)
-  case failure(any Swift.Error)
+  case failure(Swift.Error)
 }
 public typealias DataCompletionHandler = (Qrypto.DataOperationResult) -> Swift.Void
 public class SecureStorage<T> where T : Swift.Decodable, T : Swift.Encodable {
@@ -64,8 +60,8 @@ public class CountryModel : Qrypto.Codable {
     get
   }
   public init(code: Swift.String, debugModeEnabled: Swift.Bool = false)
-  required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
   @objc deinit
 }
 extension Qrypto.PKCS7 {
@@ -146,23 +142,23 @@ public struct CheckInQR : Qrypto.Codable {
   public let consent: Swift.String
   public let subject: Swift.String
   public let serviceProvider: Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct ServerListResponse : Qrypto.Codable {
   public let id: Swift.String?
   public let service: [Qrypto.ValidationService]?
   public let verificationMethod: [Qrypto.VerificationMethod]?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct PublicKeyJWK : Qrypto.Codable {
   public let kid: Swift.String
   public let alg: Swift.String
   public let x5c: [Swift.String]
   public let use: Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct VerificationMethod : Qrypto.Codable {
   public let id: Swift.String
@@ -170,8 +166,8 @@ public struct VerificationMethod : Qrypto.Codable {
   public let type: Swift.String
   public let publicKeyJwk: Qrypto.PublicKeyJWK?
   public let verificationMethods: [Swift.String]?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct ValidationService : Qrypto.Codable {
   public let id: Swift.String
@@ -179,8 +175,8 @@ public struct ValidationService : Qrypto.Codable {
   public let name: Swift.String
   public let serviceEndpoint: Swift.String
   public var isSelected: Swift.Bool?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 extension Qrypto.QryptoCert {
   public var qrCode: UIKit.UIImage? {
@@ -296,19 +292,19 @@ public struct QryptoData : Qrypto.Codable {
   public let title: Swift.String
   public let ci: Swift.String
   public let scheme: Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 extension Qrypto.QryptoData {
-  public init(from decoder: any Swift.Decoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct QryptoFormat : Qrypto.Codable {
   public let header: Swift.String
   public let version: Swift.String
   public let fields: [[Swift.String : Qrypto.QryptoField]]
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 extension Qrypto.QryptoFormat {
-  public init(from decoder: any Swift.Decoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct QryptoField : Qrypto.Codable {
   public let type: Swift.String
@@ -321,10 +317,10 @@ public struct QryptoField : Qrypto.Codable {
   public let file_uuid: Swift.String
   public let file_token: Swift.String
   public let share_mode: Swift.Int
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 extension Qrypto.QryptoField {
-  public init(from decoder: any Swift.Decoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public class QryptoCert : Qrypto.Codable {
   final public let fullPayloadString: Swift.String
@@ -355,8 +351,8 @@ public class QryptoCert : Qrypto.Codable {
   public init(from payload: Swift.String) throws
   public init()
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc(QryptoHistoryScan) public class QryptoHistoryScan : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -366,8 +362,8 @@ public struct FileMetaData : Qrypto.Codable {
   public var file_name: Swift.String
   public var base64_file: Swift.String
   public var file_type: Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 extension Qrypto.QryptoWallet {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Qrypto.QryptoWallet>
@@ -399,8 +395,31 @@ extension Qrypto.QryptoWallet {
 extension Qrypto.QryptoWallet : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
+public class Verifiable {
+  public init() throws
+  public init(json: Swift.String) throws
+  public init(jsonObject: [Swift.String : Any])
+  public func getType() -> Swift.String?
+  public func addContexts(contexts: [Swift.String])
+  public func getContexts() -> [Swift.String]?
+  public var id: Swift.String? {
+    get
+    set
+  }
+  public func addTypes(types: [Swift.String])
+  public func getTypes() -> [Swift.String]?
+  public var proof: Swift.String? {
+    get
+    set
+  }
+  public func getJson() -> [Swift.String : Any]
+  public func sign(algorithm: JWTsSwift.SignatureAlgorithm, kid: Swift.String, nonce: Swift.String?, signer: JWTsSwift.JWSSigner, baseClaims: JWTsSwift.JWT?) throws -> JWTsSwift.JWSObject
+  public func sign(kid: Swift.String, nonce: Swift.String?, signer: JWTsSwift.JWSSigner, baseClaims: JWTsSwift.JWT?) throws -> JWTsSwift.JWSObject
+  public func sign(kid: Swift.String, nonce: Swift.String?, signer: JWTsSwift.JWSSigner) throws -> JWTsSwift.JWSObject
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class QCodeTableViewCell : UIKit.UITableViewCell {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
   @available(iOS 3.0, *)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
@@ -586,10 +605,10 @@ public protocol HCertEntry {
   @objc deinit
 }
 public struct ClaimResponse : Qrypto.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 extension Qrypto.ClaimResponse {
-  public init(from decoder: any Swift.Decoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct VaccinationEntry : Qrypto.HCertEntry {
   public var typeAddon: Swift.String {
@@ -624,6 +643,10 @@ extension Qrypto.AccessToken {
     @objc get
     @objc set
   }
+}
+extension Foundation.Date {
+  public static func date(rfc3339String: Swift.String) -> Foundation.Date?
+  public func rfc3339String() -> Swift.String?
 }
 @_hasMissingDesignatedInitializers public class COSE {
   public static func verify(_ cbor: Foundation.Data, with derPubKeyB64: Swift.String) -> Swift.Bool
@@ -677,6 +700,13 @@ extension Foundation.UserDefaults : Qrypto.ObjectSavable {
     get
   }
   public func printAsn1(insets: Swift.String = "") -> Swift.String
+  @objc deinit
+}
+@available(*, deprecated, message: "use Verifiable, VerifiableCredential, VerifiablePresentation instead")
+public class VerifiableSignVerifier {
+  public init()
+  public func sign(verifiable: Qrypto.Verifiable, algorithm: JWTsSwift.SignatureAlgorithm, kid: Swift.String, nonce: Swift.String?, signer: JWTsSwift.JWSSigner) throws -> JWTsSwift.JWSObject?
+  public func verify(serializedVerifiable: Swift.String, verifier: JWTsSwift.JWSVerifier) throws -> Qrypto.Verifiable?
   @objc deinit
 }
 extension Qrypto.PKCS7 {
@@ -782,9 +812,9 @@ public class Description : Qrypto.Codable {
   public var lang: Swift.String
   public var desc: Swift.String
   public init(lang: Swift.String, desc: Swift.String)
-  required public init(from decoder: any Swift.Decoder) throws
+  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public var defaultEncoder: Foundation.JSONEncoder {
   get
@@ -793,10 +823,10 @@ public var defaultDecoder: Foundation.JSONDecoder {
   get
 }
 public struct FileAttributeGetResponse : Qrypto.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 extension Qrypto.FileAttributeGetResponse {
-  public init(from decoder: any Swift.Decoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 extension Qrypto.HCert {
   public var qrCode: UIKit.UIImage? {
@@ -890,13 +920,13 @@ public enum QryptoError : Swift.Error {
   @objc deinit
 }
 public struct DownloadBase64Response : Qrypto.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 extension Qrypto.DownloadBase64Response {
-  public init(from decoder: any Swift.Decoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public protocol Cell1L32L1TableViewDelegate : AnyObject {
-  func getTableViewHeight(_ TableViewCell: Qrypto.Cell1L32l1Table, didGetHeightValue value: CoreFoundation.CGFloat)
+  func getTableViewHeight(_ TableViewCell: Qrypto.Cell1L32l1Table, didGetHeightValue value: CoreGraphics.CGFloat)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class Cell1L32l1Table : UIKit.UITableViewCell {
   @_Concurrency.MainActor(unsafe) public var lblFontPos1: UIKit.UIFont
@@ -905,8 +935,8 @@ public protocol Cell1L32L1TableViewDelegate : AnyObject {
   @_Concurrency.MainActor(unsafe) public var lblFontPos4: UIKit.UIFont
   @_Concurrency.MainActor(unsafe) public var lblTextColor: UIKit.UIColor
   @_Concurrency.MainActor(unsafe) public var cellBackgroundColor: UIKit.UIColor
-  @_Concurrency.MainActor(unsafe) weak public var delegate: (any Qrypto.Cell1L32L1TableViewDelegate)?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) weak public var delegate: Qrypto.Cell1L32L1TableViewDelegate?
+  @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
   @available(iOS 3.0, *)
@@ -922,6 +952,7 @@ extension Qrypto.Cell1L32l1Table : UIKit.UITableViewDataSource {
 }
 @objc @_inheritsConvenienceInitializers public class QryptoFunction : ObjectiveC.NSObject {
   public static func getQryptoCertFromUIImage(image: UIKit.UIImage, onCompletion: @escaping (Swift.Result<Swift.String, Qrypto.QryptoError>) -> Swift.Void)
+  public static func getQryptoCertFromString(qrString: Swift.String, onCompletion: @escaping (Swift.Result<Swift.String, Qrypto.QryptoError>) -> Swift.Void)
   public static func syncDataFromGateway(onCompletion: @escaping (Swift.Result<Swift.String, Qrypto.QryptoError>) -> Swift.Void)
   public static func getInfoCertificateWithKid(kid: Swift.String, onCompletion: @escaping (Swift.Result<Qrypto.SignerCertificate, Qrypto.QryptoError>) -> Swift.Void)
   public static func claimQryptoCert(qryptoCert: Qrypto.QryptoCert, tan: Swift.String, onCompletion: @escaping (Swift.Result<Qrypto.ClaimResponse, Qrypto.QryptoError>) -> Swift.Void)
@@ -985,9 +1016,9 @@ public class ExternalParameter : Qrypto.Codable {
   public var iat: Foundation.Date
   public var kid: Swift.String?
   public init(validationClock: Foundation.Date, valueSets: Swift.Dictionary<Swift.String, [Swift.String]>, exp: Foundation.Date, iat: Foundation.Date, issuerCountryCode: Swift.String, kid: Swift.String? = nil)
-  required public init(from decoder: any Swift.Decoder) throws
+  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public protocol ScanQryptoCodeViewDelegate : AnyObject {
   func scanQryptoCodeView(_ scanQryptoView: Qrypto.ScanQryptoCodeView, didHandleString data: Swift.String)
@@ -998,11 +1029,11 @@ public protocol ScanQryptoCodeViewDelegate : AnyObject {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ScanQryptoCodeView : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) dynamic public var isScanning: Swift.Bool
   @_Concurrency.MainActor(unsafe) public var vibrateOnResult: Swift.Bool
-  @_Concurrency.MainActor(unsafe) weak public var delegate: (any Qrypto.ScanQryptoCodeViewDelegate)?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) weak public var delegate: Qrypto.ScanQryptoCodeViewDelegate?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForInterfaceBuilder()
+  @objc override dynamic public func prepareForInterfaceBuilder()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
   @_Concurrency.MainActor(unsafe) public func startScanning()
   @_Concurrency.MainActor(unsafe) public func stopScanning()
@@ -1215,7 +1246,7 @@ public class HCert : Qrypto.Codable {
   public var certificateType: Qrypto.HCertType {
     get
   }
-  public var statement: (any Qrypto.HCertEntry)! {
+  public var statement: Qrypto.HCertEntry! {
     get
   }
   public var cryptographicallyValid: Swift.Bool {
@@ -1239,8 +1270,8 @@ public class HCert : Qrypto.Codable {
   }
   public init(from payload: Swift.String, ruleCountryCode: Swift.String? = nil) throws
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 extension Qrypto.HCert {
   public var uvciHash: Foundation.Data? {
@@ -1263,9 +1294,9 @@ public class ValueSet : Qrypto.Codable {
   public var hash: Swift.String?
   public func setHash(hash: Swift.String)
   public init(valueSetId: Swift.String, valueSetDate: Swift.String, valueSetValues: Swift.Dictionary<Swift.String, Qrypto.ValueSetItem>)
-  required public init(from decoder: any Swift.Decoder) throws
+  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public class ValueSetItem : Qrypto.Codable {
   public var display: Swift.String
@@ -1274,16 +1305,16 @@ public class ValueSetItem : Qrypto.Codable {
   public var system: Swift.String
   public var version: Swift.String
   public init(display: Swift.String, lang: Swift.String, active: Swift.Bool, system: Swift.String, version: Swift.String)
-  required public init(from decoder: any Swift.Decoder) throws
+  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public class ValueSetHash : Qrypto.Codable {
   public var identifier: Swift.String
   public var hash: Swift.String
   public init(identifier: Swift.String, type: Swift.String, hash: Swift.String)
-  required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
   @objc deinit
 }
 extension Qrypto.SignerCertificate {
@@ -1429,8 +1460,8 @@ public enum ResultVe : Swift.Int {
 public class ValidationResult {
   public var rule: Qrypto.Rule?
   public var result: Qrypto.ResultVe
-  public var validationErrors: [any Swift.Error]?
-  public init(rule: Qrypto.Rule?, result: Qrypto.ResultVe = .open, validationErrors: [any Swift.Error]? = nil)
+  public var validationErrors: [Swift.Error]?
+  public init(rule: Qrypto.Rule?, result: Qrypto.ResultVe = .open, validationErrors: [Swift.Error]? = nil)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SignerCertificateManager {
@@ -1446,10 +1477,10 @@ public class ValidationResult {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class HeaderSectionView : UIKit.UILabel {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func drawText(in rect: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
-    @objc get
+  @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func drawText(in rect: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreGraphics.CGSize {
+    @_Concurrency.MainActor(unsafe) @objc get
   }
   @objc deinit
 }
@@ -1535,14 +1566,57 @@ extension Qrypto.X509Certificate {
     @objc deinit
   }
 }
+@_inheritsConvenienceInitializers public class VerifiableCredential : Qrypto.Verifiable {
+  override public init() throws
+  override public init(json: Swift.String) throws
+  override public init(jsonObject: [Swift.String : Any])
+  convenience public init(jws: JWTsSwift.JWSObject) throws
+  override public func getType() -> Swift.String?
+  public var issuer: Swift.String? {
+    get
+    set
+  }
+  public var issuanceDate: Foundation.Date? {
+    get
+    set
+  }
+  public var expirationDate: Foundation.Date? {
+    get
+    set
+  }
+  public var credentialSubject: Any? {
+    get
+    set
+  }
+  public func getCredentialSubject<T>() -> T?
+  public func credentialStatus(id: Swift.String, type: Swift.String)
+  public func getCredentialStatusId() -> Swift.String?
+  public func getCredentialStatusType() -> Swift.String?
+  public func jsonString() -> Swift.String?
+  @objc deinit
+}
 public protocol QryptoHeaderViewDelegate : AnyObject {
   func qryptoHeaderView(_ qHeaderView: Qrypto.QryptoHeaderView, didHandleTap x509Cert: Swift.String)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class QryptoHeaderView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) weak public var delegate: (any Qrypto.QryptoHeaderViewDelegate)?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) weak public var delegate: Qrypto.QryptoHeaderViewDelegate?
+  @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class VerifiablePresentation : Qrypto.Verifiable {
+  override public init() throws
+  override public init(json: Swift.String) throws
+  override public init(jsonObject: [Swift.String : Any])
+  convenience public init(jws: JWTsSwift.JWSObject) throws
+  override public func getType() -> Swift.String?
+  public func addVerifiableCredential(verifiableCredential: Any)
+  public func verifiableCredentials() -> [Any]?
+  public var holder: Swift.String? {
+    get
+    set
+  }
   @objc deinit
 }
 extension UIKit.UIColor {
@@ -1554,7 +1628,7 @@ extension UIKit.UIColor {
     get
     set
   }
-  public static var publicKeyEncoder: (any Qrypto.PublicKeyStorageDelegate)?
+  public static var publicKeyEncoder: Qrypto.PublicKeyStorageDelegate?
   public static var cachedQrCodes: Qrypto.SyncDict<UIKit.UIImage>
   @objc deinit
 }
@@ -1612,8 +1686,8 @@ public class Rule : Qrypto.Codable {
   public func getLocalizedErrorString(locale: Swift.String) -> Swift.String
   public func setHash(hash: Swift.String)
   public init(identifier: Swift.String, type: Swift.String, version: Swift.String, schemaVersion: Swift.String, engine: Swift.String, engineVersion: Swift.String, certificateType: Swift.String, description: [Qrypto.Description], validFrom: Swift.String, validTo: Swift.String, affectedString: [Swift.String], logic: SwiftyJSON.JSON, countryCode: Swift.String, region: Swift.String? = nil)
-  required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
   @objc deinit
 }
 public class RuleHash : Qrypto.Codable {
@@ -1622,8 +1696,8 @@ public class RuleHash : Qrypto.Codable {
   public var country: Swift.String
   public var hash: Swift.String
   public init(identifier: Swift.String, type: Swift.String, version: Swift.String, country: Swift.String, hash: Swift.String)
-  required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
   @objc deinit
 }
 public class FilterParameter {
@@ -1823,13 +1897,13 @@ public protocol QryptoDetailViewDelegate : AnyObject {
   @_Concurrency.MainActor(unsafe) public var cell4T1pLblTitleTextColor: UIKit.UIColor
   @_Concurrency.MainActor(unsafe) public var cell4T1pBackgroundColor: UIKit.UIColor
   @_Concurrency.MainActor(unsafe) public var seperatorColor: UIKit.UIColor
-  @_Concurrency.MainActor(unsafe) weak public var delegate: (any Qrypto.QryptoDetailViewDelegate)?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) weak public var delegate: Qrypto.QryptoDetailViewDelegate?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) public func processData(base45: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func prepareForInterfaceBuilder()
+  @objc override dynamic public func prepareForInterfaceBuilder()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor(unsafe) public func qryptoHeaderView(_ qHeaderView: Qrypto.QryptoHeaderView, didHandleTap x509Cert: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
@@ -1839,12 +1913,12 @@ extension Qrypto.QryptoDetailView : UIKit.UITableViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
 }
 extension Qrypto.QryptoDetailView : Qrypto.Cell1L32L1TableViewDelegate {
-  @_Concurrency.MainActor(unsafe) public func getTableViewHeight(_ TableViewCell: Qrypto.Cell1L32l1Table, didGetHeightValue value: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func getTableViewHeight(_ TableViewCell: Qrypto.Cell1L32l1Table, didGetHeightValue value: CoreGraphics.CGFloat)
 }
 extension Qrypto.QryptoDetailView : UIKit.UITableViewDataSource {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
   @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
   @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
   @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell

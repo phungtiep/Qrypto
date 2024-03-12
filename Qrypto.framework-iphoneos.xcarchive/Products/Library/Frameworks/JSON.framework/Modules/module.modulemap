@@ -6,6 +6,6 @@ framework module JSON {
 }
 
 module JSON.Swift {
-  header "JSON-Swift.h"
-  requires objc
+    header "JSON-Swift.h"
+    requires objc
 }

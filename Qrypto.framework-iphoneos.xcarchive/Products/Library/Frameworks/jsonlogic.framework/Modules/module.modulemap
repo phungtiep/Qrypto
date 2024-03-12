@@ -6,6 +6,6 @@ framework module jsonlogic {
 }
 
 module jsonlogic.Swift {
-  header "jsonlogic-Swift.h"
-  requires objc
+    header "jsonlogic-Swift.h"
+    requires objc
 }

@@ -6,6 +6,6 @@ framework module SwiftCBOR {
 }
 
 module SwiftCBOR.Swift {
-  header "SwiftCBOR-Swift.h"
-  requires objc
+    header "SwiftCBOR-Swift.h"
+    requires objc
 }

@@ -1,0 +1,28 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 effective-4.1.50 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name secp256k1_swift
+import Foundation
+import Swift
+import _Concurrency
+@_exported import secp256k1_swift
+public struct SECP256K1 {
+  public struct UnmarshaledSignature {
+    public var v: Swift.UInt8
+    public var r: Foundation.Data
+    public var s: Foundation.Data
+    public init(v: Swift.UInt8, r: Foundation.Data, s: Foundation.Data)
+  }
+}
+extension secp256k1_swift.SECP256K1 {
+  public static func signForRecovery(hash: Foundation.Data, privateKey: Foundation.Data, useExtraEntropy: Swift.Bool = false) -> (serializedSignature: Foundation.Data?, rawSignature: Foundation.Data?)
+  public static func privateToPublic(privateKey: Foundation.Data, compressed: Swift.Bool = false) -> Foundation.Data?
+  public static func combineSerializedPublicKeys(keys: [Foundation.Data], outputCompressed: Swift.Bool = false) -> Foundation.Data?
+  public static func serializePublicKey(publicKey: inout secp256k1_swift.secp256k1_pubkey, compressed: Swift.Bool = false) -> Foundation.Data?
+  public static func parseSignature(signature: Foundation.Data) -> secp256k1_swift.secp256k1_ecdsa_recoverable_signature?
+  public static func recoverPublicKey(hash: Foundation.Data, signature: Foundation.Data, compressed: Swift.Bool = false) -> Foundation.Data?
+  public static func verifyPrivateKey(privateKey: Foundation.Data) -> Swift.Bool
+  public static func generatePrivateKey() -> Foundation.Data?
+  public static func unmarshalSignature(signatureData: Foundation.Data) -> secp256k1_swift.SECP256K1.UnmarshaledSignature?
+  public static func marshalSignature(v: Swift.UInt8, r: [Swift.UInt8], s: [Swift.UInt8]) -> Foundation.Data?
+  public static func marshalSignature(v: Foundation.Data, r: Foundation.Data, s: Foundation.Data) -> Foundation.Data?
+}
