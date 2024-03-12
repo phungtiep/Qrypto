@@ -14,6 +14,7 @@ Pod::Spec.new do |spec|
   spec.dependency "SwiftyRSA"
   spec.dependency "SwiftyJSON", "~> 5.0.1"
   spec.dependency "MIDJsonSchema" , " 1.0.23.0427"
+  spec.dependency "JWTsSwift"
   spec.swift_version = "5.0"
   spec.vendored_frameworks = "Qrypto.xcframework"
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
