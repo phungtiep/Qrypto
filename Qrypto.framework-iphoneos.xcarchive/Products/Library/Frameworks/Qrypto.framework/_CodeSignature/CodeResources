@@ -14,7 +14,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		PtWwz1AKVFObKSipTSw2PQlM2qY=
+		i1NQfqOGRJrbLUU/2gEdz+l4RNE=
 		</data>
 		<key>CellInfoTableViewCell.nib</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/Qrypto.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		egkJ4qWzWARVe76AwDYg24q9DHU=
+		Mj/8Zi5gNvLbhcbRCZo8dzhCg3M=
 		</data>
 		<key>Modules/Qrypto.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/Qrypto.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		egkJ4qWzWARVe76AwDYg24q9DHU=
+		Mj/8Zi5gNvLbhcbRCZo8dzhCg3M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -171,7 +171,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HPT4WzwGCFx33SV75taBU2NIsZeePjHGkSNeQm8NYiU=
+			IRITCIyj0a5TR+zfhmrZN72oHYSLSa0aFsd+46diiqM=
 			</data>
 		</dict>
 		<key>CellInfoTableViewCell.nib</key>
@@ -220,7 +220,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dqWMr3R4NPDoh36SWbBmK6jOmpFPOCbke85CxgnHHXc=
+			0vTexdNTCnjkB0kbr+q/30CCUeF3tfnIdShdH7ytOlM=
 			</data>
 		</dict>
 		<key>Modules/Qrypto.swiftmodule/arm64.swiftdoc</key>
@@ -241,7 +241,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dqWMr3R4NPDoh36SWbBmK6jOmpFPOCbke85CxgnHHXc=
+			0vTexdNTCnjkB0kbr+q/30CCUeF3tfnIdShdH7ytOlM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
