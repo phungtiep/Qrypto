@@ -1,11 +1,11 @@
 Pod::Spec.new do |spec|
   spec.name         = 'Qrypto'
-  spec.version      = '1.0.24.0322'
+  spec.version      = '1.0.24.0422'
   spec.license      = 'MIT'
   spec.summary      = 'QRYPTO framework'
   spec.homepage     = 'https://github.com/phungtiep/Qrypto'
   spec.author       = 'PHUNGTSM @Mobile-ID Technology and Services Joint Stock Company'
-  spec.source       = { :git => 'https://github.com/phungtiep/Qrypto.git', :tag => '1.0.24.0322' }
+  spec.source       = { :git => 'https://github.com/phungtiep/Qrypto.git', :tag => '1.0.24.0422' }
   spec.requires_arc = true
   spec.ios.deployment_target  = '13.0'
   spec.dependency "jsonlogic"

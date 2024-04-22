@@ -955,6 +955,7 @@ extension Qrypto.Cell1L32l1Table : UIKit.UITableViewDataSource {
   public static func getQryptoCertFromString(qrString: Swift.String, onCompletion: @escaping (Swift.Result<Swift.String, Qrypto.QryptoError>) -> Swift.Void)
   public static func syncDataFromGateway(onCompletion: @escaping (Swift.Result<Swift.String, Qrypto.QryptoError>) -> Swift.Void)
   public static func getInfoCertificateWithKid(kid: Swift.String, onCompletion: @escaping (Swift.Result<Qrypto.SignerCertificate, Qrypto.QryptoError>) -> Swift.Void)
+  public static func getAllTrustedParty(onCompletion: @escaping (Swift.Result<[Qrypto.SignerCertificate], Qrypto.QryptoError>) -> Swift.Void)
   public static func claimQryptoCert(qryptoCert: Qrypto.QryptoCert, tan: Swift.String, onCompletion: @escaping (Swift.Result<Qrypto.ClaimResponse, Qrypto.QryptoError>) -> Swift.Void)
   public static func getHistoryScan(onCompletion: @escaping (Swift.Result<[Qrypto.QryptoHistoryScan], Qrypto.QryptoError>) -> Swift.Void)
   public static func deleteAllHistoryScan(onCompletion: @escaping (Swift.Result<Swift.String, Qrypto.QryptoError>) -> Swift.Void)
@@ -1816,6 +1817,16 @@ extension Foundation.Data {
     get
   }
 }
+public enum QryptoDownloadFileState {
+  case NOT_THING_FOR_DOWNLOAD
+  case DOWNLOADING
+  case DOWNLOAD_COMPLETE
+  public static func == (a: Qrypto.QryptoDownloadFileState, b: Qrypto.QryptoDownloadFileState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public protocol QryptoDetailViewDelegate : AnyObject {
   func qryptoDetailView(_ qdetailView: Qrypto.QryptoDetailView, tanAuthentication qryptoCertificate: Qrypto.QryptoCert)
   func qryptoDetailView(_ qdetailView: Qrypto.QryptoDetailView, handleError error: Qrypto.QryptoError)
@@ -1824,6 +1835,8 @@ public protocol QryptoDetailViewDelegate : AnyObject {
   func qryptoDetailView(_ qdetailView: Qrypto.QryptoDetailView, handleF1CellMetaData data: Qrypto.FileMetaData)
   func qryptoDetailView(_ qdetailView: Qrypto.QryptoDetailView, handle4T1pCellError error: Qrypto.QryptoError)
   func qryptoDetailView(_ qdetailView: Qrypto.QryptoDetailView, handle4T1pCellMetaData data: Qrypto.FileMetaData)
+  func qryptoDetailView(_ qdetailView: Qrypto.QryptoDetailView, fileDownloadState state: Qrypto.QryptoDownloadFileState)
+  func qryptoDetailView(_ qdetailView: Qrypto.QryptoDetailView, getQryptoTitle title: Swift.String)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class QryptoDetailView : UIKit.UIView, UIKit.UITextFieldDelegate, Qrypto.QryptoHeaderViewDelegate {
   @_Concurrency.MainActor(unsafe) public var qryptoCert: Qrypto.QryptoCert
@@ -1902,6 +1915,7 @@ public protocol QryptoDetailViewDelegate : AnyObject {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) public func processData(base45: Swift.String)
   @objc override dynamic public func prepareForInterfaceBuilder()
+  @_Concurrency.MainActor(unsafe) public func scrollDetailViewToTop()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
   @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor(unsafe) public func qryptoHeaderView(_ qHeaderView: Qrypto.QryptoHeaderView, didHandleTap x509Cert: Swift.String)
@@ -2114,3 +2128,5 @@ extension Qrypto.RuleValidationResult : Swift.RawRepresentable {}
 extension Qrypto.RevocationMode : Swift.Equatable {}
 extension Qrypto.RevocationMode : Swift.Hashable {}
 extension Qrypto.RevocationMode : Swift.RawRepresentable {}
+extension Qrypto.QryptoDownloadFileState : Swift.Equatable {}
+extension Qrypto.QryptoDownloadFileState : Swift.Hashable {}
