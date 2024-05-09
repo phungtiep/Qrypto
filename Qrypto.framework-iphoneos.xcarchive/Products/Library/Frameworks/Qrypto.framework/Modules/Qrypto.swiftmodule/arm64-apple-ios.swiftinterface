@@ -951,8 +951,8 @@ extension Qrypto.Cell1L32l1Table : UIKit.UITableViewDataSource {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
 }
 @objc @_inheritsConvenienceInitializers public class QryptoFunction : ObjectiveC.NSObject {
-  public static func getQryptoCertFromUIImage(image: UIKit.UIImage, onCompletion: @escaping (Swift.Result<Swift.String, Qrypto.QryptoError>) -> Swift.Void)
-  public static func getQryptoCertFromString(qrString: Swift.String, onCompletion: @escaping (Swift.Result<Swift.String, Qrypto.QryptoError>) -> Swift.Void)
+  public static func getQryptoCertFromUIImage(image: UIKit.UIImage, onCompletion: @escaping (Swift.Result<Qrypto.QryptoCert, Qrypto.QryptoError>) -> Swift.Void)
+  public static func parserQryptoCertWithString(qrString: Swift.String, onCompletion: @escaping (Swift.Result<Qrypto.QryptoCert, Qrypto.QryptoError>) -> Swift.Void)
   public static func syncDataFromGateway(onCompletion: @escaping (Swift.Result<Swift.String, Qrypto.QryptoError>) -> Swift.Void)
   public static func getInfoCertificateWithKid(kid: Swift.String, onCompletion: @escaping (Swift.Result<Qrypto.SignerCertificate, Qrypto.QryptoError>) -> Swift.Void)
   public static func getAllTrustedParty(onCompletion: @escaping (Swift.Result<[Qrypto.SignerCertificate], Qrypto.QryptoError>) -> Swift.Void)
@@ -1913,7 +1913,7 @@ public protocol QryptoDetailViewDelegate : AnyObject {
   @_Concurrency.MainActor(unsafe) weak public var delegate: Qrypto.QryptoDetailViewDelegate?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) public func processData(base45: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func processInfo(qryptoCertificate: Qrypto.QryptoCert, certificateString: Swift.String)
   @objc override dynamic public func prepareForInterfaceBuilder()
   @_Concurrency.MainActor(unsafe) public func scrollDetailViewToTop()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
