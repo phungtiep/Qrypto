@@ -951,8 +951,9 @@ extension Qrypto.Cell1L32l1Table : UIKit.UITableViewDataSource {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
 }
 @objc @_inheritsConvenienceInitializers public class QryptoFunction : ObjectiveC.NSObject {
-  public static func getQryptoCertFromUIImage(image: UIKit.UIImage, onCompletion: @escaping (Swift.Result<Qrypto.QryptoCert, Qrypto.QryptoError>) -> Swift.Void)
+  public static func getQryptoCertFromUIImage(image: UIKit.UIImage, onCompletion: @escaping (Swift.Result<(Qrypto.QryptoCert, Swift.String), Qrypto.QryptoError>) -> Swift.Void)
   public static func parserQryptoCertWithString(qrString: Swift.String, onCompletion: @escaping (Swift.Result<Qrypto.QryptoCert, Qrypto.QryptoError>) -> Swift.Void)
+  public static func parserQryptoCertWithStringInHistoryAndWallet(qrString: Swift.String, onCompletion: @escaping (Swift.Result<Qrypto.QryptoCert, Qrypto.QryptoError>) -> Swift.Void)
   public static func syncDataFromGateway(onCompletion: @escaping (Swift.Result<Swift.String, Qrypto.QryptoError>) -> Swift.Void)
   public static func getInfoCertificateWithKid(kid: Swift.String, onCompletion: @escaping (Swift.Result<Qrypto.SignerCertificate, Qrypto.QryptoError>) -> Swift.Void)
   public static func getAllTrustedParty(onCompletion: @escaping (Swift.Result<[Qrypto.SignerCertificate], Qrypto.QryptoError>) -> Swift.Void)
